@@ -1,0 +1,21 @@
+Jianlong Huang
+
+What decisions or assumptions did you make about how to design your program?
+1.Use MazeLocation pointer vector to present map.
+2.Use IntrepidStudent and TA pointer to present student and TA since there is only one student and 2 TAs.
+3.Count use skill or climb ladder as one turn even fail
+
+What was your test plan for your program?
+1. Test every function right after implementint it.
+2. Test move, appeased, pick skill, go to next level, instructor, ta after finished program.
+
+What bugs did you uncover through testing? How did you fix those bugs?
+1.Can not read map due to the new line character. I use gdb and found that it fail to delete the map,so I try to use if else loop instead of only if loop and print it to see is inside the vector, then I found out there are new line characters. I fixed them by ignore the characters which not in the txt file.
+ 2.Memory leak. I post the question to Piassa and use valgrind to fine where did memory happened. The memory leak was caused by not delete the pointer vector. 
+
+What problems or obstacles did you run into while you were developng your program? How did you resolve these?
+1. When I reset the level or go to next level, I can't set student's location because I don't know where the begin is. I solved it by add new member to mazelevel class to store the start location.
+2. I can't make my program run again when fail to escape. I solved it by develping a chech function, it return 1 when escape, return 2 when fail, return 0 when not adjence to instructor.
+
+What resources were useful to your in solving problems? Were threr helpful websites or Stack Overflow posts? What help did you get from the TAs and/or the Instructor? Were specific parts of the course notes helpful?
+1.The Piassa is useful to me in solving problems, someone in Piassa help me find the memory leak, I also check some stack Overflow postsabout pointer vector memory leak. 
