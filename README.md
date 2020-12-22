@@ -1,9 +1,5 @@
 # Final Project - Escape from CS 162
 
-**Due at 11:59pm on Monday, 3/19/2017**
-
-In this final project, you'll implement a game that combines many of the things we talked about in class this year.  The goal of the game will be to "escape" from CS 162 with a passing grade.
-
 ## Escape from CS 162
 
 In the game you'll implement for this project, CS 162 is represented as a multi-level maze.  The player's goal is to guide an Intrepid Student through the maze, picking up Programming Skills along the way.  As the Intrepid Student makes their way through the maze, climbing ladders to reach higher and higher levels, they must either avoid the TAs, who are also wandering through the maze, or else appease the TAs by demonstrating a Programming Skill.  On the highest level of the maze, the Intrepid Student will encounter the Instructor, and when they do, they must have picked up enough Programming Skills to satisfy the Instructor (skills demonstrated to the TAs don't satisfy the Instructor).  If the Instructor is satisfied by the Programming Skills picked up by the Intrepid Student, the Intrepid Student is allowed to escape from the CS 162 maze with a passing grade.  Otherwise, they must repeat the whole maze from the beginning (ugh)!
